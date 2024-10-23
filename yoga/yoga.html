@@ -1,0 +1,183 @@
+
+   <!--DOCTYPE html-->
+   <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--==title========================-->
+        <title>FUNFIT | Yoga </title>
+        <!--==Fav-icon=====================-->
+        <link rel="shortcut icon" href="../images/funfit.png">
+        <!--==CSS==========================-->
+        <link rel="stylesheet" href="yoga.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--==Font-Awesome-for-icons=====-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- Link Swiper's CSS -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+    
+    </head>
+    <body>
+        <section id="hero">
+            <nav class="navigation">
+                <input type="checkbox" class="menu-btn" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+                <!--**logo*********-->
+                <a href="index.html" class="logo">
+                    <img id="funfit" src="../images/funfit.png" alt="FUNFIT">
+                <ul class="menu">
+                  <li><a href="" target="_blank">Health Analysis </a > </li>
+                  <li><a href="yoga.html" target="_blank">Excercises</a></li>
+                  <li><a href="../Schedular/index.html" target="_blank">Plannar</a></li>
+                  <li><a href="../music/index.html" target="_blank">Music</a></li>
+                </ul>
+            </nav>
+            <!--==Content============================-->
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1> Yoga</h1>
+                    <p>Discover inner peace and strength through the ancient practice of yoga, and nurture both body and mind. </p>
+                   
+                </div>
+            </div>
+    
+            
+        </section>
+
+       <div class="videos">
+        <video class="vdo" width="420" height="300" controls src="./yogaVideos/01Yoga.mp4"></video>
+        <video class="vdo" width="420" height="300" controls src="./yogaVideos/02Yoga.mp4"></video>
+        <video class="vdo" width="420" height="300" controls src="./yogaVideos/03Yoga.mp4"></video>
+        <br>
+        <video class="vdo"  width="420" height="300" controls src="./yogaVideos/04Yoga.mp4"></video>
+        <video  class="vdo" width="420" height="300" controls src="./yogaVideos/05Yoga.mp4"></video>
+        <video  class="vdo" width="420" height="300"controls src="./yogaVideos/06Yoga.mp4"></video>
+       </div>
+
+
+
+       
+        <footer>
+            <div class="footer-container">
+                <!--**comoany-box**-->
+                <div class="footer-company-box">
+                    <!--logo-->
+                    <a href="#" class="logo"><img src="images/" alt="FUNFIT"></a>
+                    <!--details-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas neque repudiandae nihil.</p>
+                    <!--social-box-->
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>Main Link's</strong>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>External Link's</strong>
+                    <ul>
+                        <li><a href="#">Our Product's</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Term's and Condition's</a></li>
+                    </ul>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>External Link's</strong>
+                    <ul>
+                        <li><a href="#">Our Product's</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Term's and Condition's</a></li>
+                    </ul>
+                </div>
+                
+       
+            </div>
+    
+            <!--**bottom**********************-->
+            <div class="footer-bottom">
+                <span class="footer-owner">Fun Fit</span>
+                <span class="copyright">&#169; Copyright 2024 -  Fun Fit</span>
+            </div>
+        </footer>
+    
+    
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+        <!-- Initialize Swiper -->
+        <script>
+        /*-services--*/
+        var swiper = new Swiper(".mySwiperservices", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+              700: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            },
+          });
+        /*--team--*/
+        var swiper = new Swiper(".mySwiperteam", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              560: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              950: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1250: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+            },
+          });
+        /*--testimonials--*/
+          var swiper = new Swiper(".mySwipertesti", {
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          });
+        </script>
+    
+    </body>
+    </html>
+       
+    
