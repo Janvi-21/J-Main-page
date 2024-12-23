@@ -1,0 +1,162 @@
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #edd7d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.music-player {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* Logo Styling */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: 120px;  /* Set a default width for the logo */
+}
+
+/* Header and Player Styling */
+.player-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.player-container {
+    text-align: center;
+}
+
+h1 {
+    color: #2193d0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#song-title {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+#song-artist {
+    font-size: 14px;
+    color: #777;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.control-btn {
+    background-color: #031477;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 70px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #286fcc;
+}
+
+.song-list {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.song-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.song-list li {
+    padding: 8px 0;
+    cursor: pointer;
+    color: #1d24ad;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.song-list li:hover {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .music-player {
+        width: 90%;
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    /* Logo responsiveness */
+    .logo {
+        width: 70px;  /* Adjust logo size on small screens */
+        margin-top: 50px;
+    }
+
+    .player-header h1 {
+        font-size: 20px;
+    }
+
+    #song-title {
+        font-size: 16px;
+    }
+
+    #song-artist {
+        font-size: 12px;
+    }
+
+    .control-btn {
+        padding: 10px;
+        font-size: 12px;
+        min-width: 60px;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .song-list {
+        max-height: 200px;
+    }
+}

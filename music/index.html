@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxing Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="music-player">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <img src="logo.png" alt="FunFit" class="logo">
+        </div>
+
+
+<div class="music-player">
+    <div class="player-header">
+        <h1>SOOTHING MUSIC : for you to relax your mind.</h1>
+    </div>
+    
+    <div class="player-container">
+        <div class="song-info">
+            <h3 id="song-title">Song Title</h3>
+            <p id="song-artist">Artist Name</p>
+        </div>
+        
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="controls">
+            <button id="prev-btn" class="control-btn">Previous</button>
+            <button id="play-btn" class="control-btn">Play</button>
+            <button id="next-btn" class="control-btn">Next</button>
+        </div>
+        
+        <div class="song-list">
+            <ul id="song-list">
+                <!-- Songs will be listed here dynamically -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
