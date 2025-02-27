@@ -43,6 +43,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
 }
 .navigation{
     display: flex;
@@ -958,6 +959,7 @@ footer{
 .menu-icon,
 .menu-btn{
     display: none;
+    color: white;
 }
 @media(max-width:1200px){
     .footer-container{
@@ -1033,6 +1035,7 @@ footer{
     }
     .menu-icon{
         display: block;
+	color: white;
     }
     .navigation .menu-icon{
         cursor: pointer;
