@@ -1045,6 +1045,7 @@ footer{
         position: relative;
         user-select: none;
         z-index: 106;
+	color: white;
     }
     .navigation .menu-icon .nav-icon{
         background-color: #181818;
